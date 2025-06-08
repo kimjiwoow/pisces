@@ -1,4 +1,170 @@
+
 <!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>물병자리 결과</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background-color: #45357D;
+      font-family: 'Pretendard', sans-serif;
+      color: #fff;
+      padding: 40px 16px 100px;
+    }
+    .container {
+      width: 100%;
+      max-width: 485px;
+      margin: 0 auto;
+    }
+    .header { text-align: center; margin-bottom: 32px; }
+    .header img { width: 180px; margin-bottom: 12px; }
+    .header h1 { font-size: 22px; font-weight: 700; color: #FFD579; }
+    .header p { font-size: 14px; color: #FFD579; margin-top: 4px; }
+
+    .card {
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      padding: 20px 24px;
+      margin-bottom: 16px;
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .card.myth {
+      background-color: #45357D;
+      border: none;
+    }
+
+    .card h2 {
+      font-size: 18px;
+      color: #FFEA92;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      padding-left: 8px;
+      padding-bottom: 4px;
+      border-left: 3px solid #ffea92;
+    }
+
+    .card h2::before { content: '✨'; margin-right: 8px; }
+    .card p { font-size: 14px; line-height: 1.8; }
+
+    .highlight { color: #FFD579; font-weight: bold; }
+    .good { color: #56bad6; font-weight: bold; }
+    .bad { color: #FFC0CB; font-weight: bold; }
+    .spaced { margin-top: 14px; }
+
+    .extra-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .sub-button {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-size: 14px;
+      cursor: pointer;
+      backdrop-filter: blur(6px);
+      transition: all 0.3s ease;
+    }
+
+    .sub-button:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 0 10px 3px #fff;
+      transform: translateY(-1px);
+    }
+
+    .coordi-toggle {
+      margin-top: 8px;
+      font-size: 20px;
+      color: #FFD579;
+      background: none;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.2s, text-shadow 0.3s;
+    }
+
+    .coordi-toggle:hover {
+      transform: scale(1.2);
+      text-shadow: 0 0 8px #FFD579;
+    }
+
+    .coordi-img {
+      display: none;
+      margin-top: 12px;
+      width: 100%;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="https://i.imgur.com/LMLKkJF.png" alt="게자리 캐릭터">
+      <h1>🏺 물병자리 🏺</h1>
+      <p>1월 20일 ~ 2월 18일</p>
+    </div>
+
+    <div class="card myth">
+      <h2>신화 소개</h2>
+      <p>물병자리는 트로이의 왕자 가니메데가 주인공인 별자리다. 청춘의 여신 헤베가 다쳐 신들에게 술을 따를 수 없게 되자, 제우스는 독수리로 변해 이다산에서 양을 돌보던 가니메데를 납치했다. 가니메데는 올림포스에서 신들에게 술을 따르는 역할을 맡게 되었고, 제우스는 그를 기려 하늘의 별자리로 만들었다. 물이 넘쳐흐르는 모습은 생명과 지혜의 상징으로도 여겨진다.</p>
+      <p class="spaced"><span class="highlight">유명인:</span> 강승윤, 박해일, KCM, 김범수, 적재, 안정환, 지효, 곽튜브, 피오, 규현</p>
+    </div>
+
+    <div class="card">
+      <h2>성격</h2>
+      <p>물병자리는 자의식이 강하고, 세상 모든 중심이 자신이라고 느낄 정도로 '나'에 대한 확신이 크다. 
+감정보다는 이성으로 상황을 통제하는 데 능하며, 차분하고 여유로운 분위기를 풍긴다. </p>
+      <p>말솜씨도 좋고, 유치한 걸 극도로 싫어한다. 외모에 대한 기준이 엄격하고, 본인 기준에 벗어난 '비호감'에는 거부감이 있다. 
+내면은 상처와 모순으로 얽혀 있으며, 이성적이지만 정서적으로는 쉽게 지친다. /p>
+      <p>어른스럽고 강한 사람에게 끌리며, 자신의 감정을 숨기고 머리로 살아가는 타입. 
+신념이 분명한 사람에게 끌리고, 잘난 척을 하지만 그건 자연스럽게 나오는 자기 중심적 사고일 뿐. 
+머리 회전이 빠르고 특이한 취향을 가졌으며, 삶의 안식처를 끊임없이 찾는다.
+
+</p>
+    </div>
+
+    <div class="card">
+      <h2>궁합</h2>
+      <p><span class="good">좋은 궁합:</span> 천칭자리, 쌍둥이자리, 사수자리<br>
+         <span class="bad">나쁜 궁합:</span> 게자리, 전갈자리</p>
+      <p class="spaced">물병자리는 독립적이고 이성적인 사고를 중시하는 성향으로, 감정에 휘둘리기보다는 논리적으로 관계를 판단하는 타입이다. </p>
+      <p>천칭자리와 쌍둥이자리는 비슷하게 이성 중심적이고 자유로운 사고방식을 지녔기 때문에, 서로의 가치관을 존중하며 대화를 즐기는 이상적인 궁합을 형성할 수 있다. 
+사수자리와도 철학적이고 미래지향적인 대화를 통해 지적인 공감을 나누는 관계가 가능하다. </p>
+      <p>하지만 감정 기복이 크고 내면이 예민한 게자리나 집착과 소유욕이 강한 전갈자리와는 충돌이 많을 수 있으며, 물병자리의 자유를 구속받는 느낌을 받을 수 있어 주의가 필요하다.
+</p>
+    </div>
+
+    <div class="card">
+      <h2>TIP</h2>
+      <p><span class="good">참고할 것:</span>오랜 친구들과의 만남과 새로운 인연, 일의 흐름과 수익, 쇼핑까지 전반적으로 활기차고 좋은 기운이 가득한 한 주입니다.</p>
+      <p><span class="bad">주의할 것:</span> 연인과의 관계에서는 다툼이나 거짓말, 계획 변경 등 불안 요소가 많아 조심이 필요한 시기입니다.</p>
+    </div>
+
+    <div class="card">
+      <h2>행운 정보</h2>
+      <p><span class="highlight">행운의 숫자:</span> 2 , 8<br>
+         <span class="highlight">행운의 색상:</span> 푸른색, 보라색<br>
+         <span class="highlight">행운의 자음:</span> ㄷ , ㅊ<br>
+         <span class="highlight">베스트 운동:</span> 요가 / 수영 / 맨손스트레칭<br>
+         <span class="highlight">행운의 장소:</span> IT 공간, 창업센터, 미래지향적인 장소 → 독창적인 아이디어가 빛나는 공간에서 영감과 기회를 얻어요.<br>
+         <span class="highlight">행운의 아이템:</span> 비상금<br>
+         <span class="highlight">행운의 코디:</span>  유니크 탑, 와이드 팬츠, 테크 소품</p>
+      <button id="toggleBtn" class="coordi-toggle" onclick="toggleCoordi()">+</button>
+      <img id="coordiImage" class="coordi-img" src="https://i.imgur.com/Ll98nBn.png" alt="행운의 헤뜨셋 이미지">
+    </div>
+  </div>
+
+  <!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
@@ -176,3 +342,22 @@
   </script>
 </body>
 </html>
+
+
+  <script>
+    function toggleCoordi() {
+      const img = document.getElementById("coordiImage");
+      const button = document.getElementById("toggleBtn");
+
+      if (img.style.display === "block") {
+        img.style.display = "none";
+        button.innerText = "+";
+      } else {
+        img.style.display = "block";
+        button.innerText = "–";
+      }
+    }
+  </script>
+</body>
+</html>
+
